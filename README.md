@@ -1,5 +1,5 @@
 <h1 align="center">
-  ShowTime
+  ShowTime  
 </h1>
 
 <h5 align="center">A comprehensive movie ticket booking system</h5>
@@ -8,3 +8,14 @@
 <p align="center">
 The system follows a 3-tier architecture, with a web based front end, Python + Flask as the HTTP server and router, and SQLite3 server for the database. SQLAlchemy Python connector is used to query the SQLite3 server, which executes the queries. All HTTP requests to Flask are made via encrypted POST messages.
 </p>
+
+## 
+
+<img src="/Project/website/static/images/demo.gif"/>
+
+## Documentation
+
+ ####  [PROJECT REPORT](https://drive.google.com/file/d/1UJhLTAFmzoYCfg5GVcOOJIe0z-G0rvEO/view?usp=sharing)
+
+
+
