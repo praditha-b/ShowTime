@@ -1,0 +1,1068 @@
+body{
+    margin: 0;
+    border: 0%;
+    padding: 0%;
+    background-color: rgb(12, 11, 11);
+    background-color: black;
+    
+}
+
+h2{
+    margin: 0;
+}
+
+
+nav{
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+
+
+
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.content
+{   
+    
+    background-color: rgb(12, 11, 11);
+    background-color: black;
+    margin-top: 4vh;
+    width: 100%;
+    display: inline-block;
+    
+    
+}
+
+
+ .headerstyle{
+    list-style-type: none;
+    /*color:  rgb(214, 208, 207);*/
+    margin: 0%;
+    /*background-color: #141313;*/
+    padding: 0%;
+    overflow: hidden;
+    height: 14.5vh;
+    
+    background-color: rgb(12, 11, 11);
+   /* background-color: black;*/
+
+
+
+}
+
+/* showtime title styling*/
+
+#title{
+    display: block;
+    float: left;
+    padding-top: 1.3vh;
+    padding-left: 0.8vw;
+    color: rgb(236, 6, 24);
+    color: rgb(241, 19, 19);
+    color: rgb(252, 21, 21);
+    
+    /*font-family: 'Bangers';*/
+    font-family: 'Staatliches', cursive;
+    /*font-family: 'russo one';*/
+    font-size: 55px;
+    text-decoration: none;
+
+    
+
+    
+    
+}
+
+/* login and location text styling*/
+
+.login
+{
+    display: block;
+    float: right;
+    margin-top: 3.5vh ;
+    font-weight: bold;
+    color: blanchedalmond;
+    text-decoration: none;
+}
+
+/*login text styling*/
+
+.login{
+    margin-right: 2.5vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 130%;
+    background-color:  rgb(252, 21, 21);;
+    padding: 0.5%;
+    height: 7.5vh;
+    width: 13vw;
+    text-decoration: none;  
+     
+    padding-top: 0.8%;
+    
+
+}
+
+.logout{
+    
+    display: block;
+    float: right;
+    margin-top: 5.0vh ;
+    font-weight: bold;
+    color: blanchedalmond;
+    text-decoration: none;
+    margin-right: 1.5vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 130%;
+    /*padding: 1%;
+    height: 7.5vh;
+    width: 13vw;*/
+    text-decoration: none;   
+
+}
+
+#logout{
+    color: rgb(252, 21, 21) ;
+}
+
+#login
+{
+    font-weight: bold;
+    color: blanchedalmond;
+    text-decoration: none;
+    margin-left: 1vw;
+    
+    
+    
+}
+
+
+/*account logo styling*/
+
+#account
+{
+    display: block;
+    float: right;
+    margin-right: 1vw ;
+    padding-top: 3vh ;
+    color: blanchedalmond;
+    font-size: 40px;
+    
+}
+
+
+/* login page and signup page styling*/
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.backgroundimage{
+   background-image: url("images/backgroundimage3.jpg");
+	/*background-repeat: no-repeat;*/
+	background-size: 100%;
+
+    
+    
+}
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    margin-top: 6vh;
+
+}
+
+
+
+
+.loginform{
+
+    height: 520px;
+    width: 400px;
+    background-color: rgba(0,0,0,1.0);
+   /* background-color: black;*/
+   margin-top: 6vh;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    /*border-radius: 10px;*/
+    /*backdrop-filter: blur(10px);*/
+    border: 2px solid rgba(17, 16, 16, 0.603);
+   box-shadow: 0 0 40px rgba(18, 18, 20, 0.6);
+    padding: 50px 35px;
+    display: inline-block;
+    
+
+}
+.loginform *{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+    
+    
+}
+
+
+.loginform h3{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 42px;
+    text-align: center;
+    color: rgb(241, 19, 19);
+    opacity: 100%;
+
+}
+
+
+#signupform
+{
+    display: inline-block;
+    margin-top: 10vh;
+    height: 650px;
+    width: 450px;
+
+}
+
+.labelstyle{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.inputstyle{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(19, 17, 17);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+.loginbutton{
+    margin-top: 50px;
+    width: 100%;
+    background-color: rgb(252, 21, 21);
+    color: blanchedalmond;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.social div{
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social a:hover{
+     color:rgb(252, 21, 21);
+}
+
+
+
+/* CAROUSEL STYLING*/
+
+
+
+/* Slideshow container */
+.slideshow-container {
+
+
+    margin-top: 10vh;
+
+    
+    
+}
+
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+
+  
+  }
+
+
+/*carousel image styling*/
+.carousel {
+    width: 100%;
+    height: 65vh;
+    position: static !important;
+    
+
+    
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 5px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  font-size: 35px;
+  color: white;
+  font-weight: bold;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+
+    right: 0;
+   border-radius: 3px 0 0 3px;
+  }
+  
+
+/* On hover, make it a little bit see-through */
+.prev:hover, .next:hover {
+    opacity: 50%;
+  }
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+
+
+
+/*Movie description styling*/
+
+.movie-images{
+    width: 15vw;
+    height: 50vh;
+    
+}
+
+
+.movie-images-db{
+  width: 17vw;
+  height: 55vh;
+  
+}
+
+
+
+.movbutton{
+  background: none;
+  margin-bottom: 5vh;
+  margin: 0%;
+  cursor: pointer;
+  border: none;
+  margin-left: 2%;
+  margin-top: 1.2%;
+  margin-bottom: 2%;
+  
+
+}
+
+.movie-heading{
+    color: blanchedalmond;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-style: bold ;
+    font-size: 30px;
+    font-family: 'Staatliches', cursive;
+    margin-left: 1%;
+    margin-bottom: 2%;
+
+}
+
+/*description page styling*/
+
+ .movie-container{
+    
+ 	min-height: 100%;
+ 	display: grid;
+	/*position: fixed;*/
+ 	grid-template-columns: 28vw 1fr;
+ 	grid-gap: 30px;
+ 	backdrop-filter: blur(12px) contrast(80%); 
+     background-color: rgb(10,10,10);
+     background-color: black;
+
+     margin-top: 10vh;
+
+ 	
+ }
+
+ .info {
+ 	padding-top:  2px;
+ 	padding-left: 24px;
+
+ }
+ /*.poster {
+ 	width: 100%;
+	display: flex;
+ 	height: 100%;
+ 	overflow: hidden;
+ }*/
+ .poster img {
+ 	width: 25vw;
+ 	height: 75vh;
+ 	object-fit: cover;
+ 	overflow: hidden;
+     margin-top: 6vh;
+ 	margin-left: 2vw;
+ }
+
+
+ .poster img:hover {
+ 	transform: null;
+
+ }
+ .info > div {
+ 	margin-top: 7vh;
+ 	margin-bottom: 32px;
+ 	margin-right: 32px;
+ }
+
+ .movie-title {
+ 	font-size: 50px;
+ 	font-weight: bold;
+ 	color: rgb(219, 219, 219);
+ 	text-transform: uppercase;
+ 	font-family: 'Staatliches', cursive;
+ 	
+ }
+ .movie-details .set {
+ 	display: inline-block;
+ 	margin-right: 64px;
+ }
+ .movie-details label {
+ 	font-size: 110%;
+ 	color: rgb(252, 21, 21);
+ 	display: block;
+	 font-family: 'Staatliches', cursive;
+ }
+
+ .setstyle{
+   color: rgb(130, 134, 130);
+ }
+
+ .movie-details span{
+ 	font-size: 22px;
+ }
+.movie-description {
+	line-height: 24px;
+	color:  rgb(219, 219, 219);
+	font-family: 'Gill Sans','Gill Sans MT ',Calibri,'Trebuchet MS',sans-serif;
+}
+
+
+
+.movie-btn{
+	height: 50px;
+	width: 199px;
+   font-size: 20px;
+   color: blanchedalmond;
+   background-color: rgb(252, 21, 21);
+   outline: none;
+	display: block;
+	border: 0;
+	line-height: 1;
+	padding: 16px 30px;
+	cursor: pointer;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: bold;
+   
+
+}
+#movie-btn{
+	text-decoration: none;
+   font-weight: bold;
+   color: blanchedalmond;
+}
+
+.cast-header
+{
+	margin-bottom: 3vh;
+	font-family: 'Staatliches', cursive;
+	font-size: 120%;
+}
+
+/* shows page style */
+
+.bookingpage{
+  height: 100vh
+}
+
+.shows-container{
+  margin-left: 5vw;
+  
+  margin-top: 10vh;
+  
+}
+
+.shows-container :hover{
+  border-color: #F44336;
+}
+
+.show{
+  margin-top: 10vh;
+  width: 22vw;
+  height: 25vh;
+  margin-right: 3vw;
+  font-family: 'Staatliches', cursive;
+  font-size: 3.2vh;
+  background-color:rgb(19, 17, 17);
+  border-color: rgb(17, 17, 17);
+  color: #f3efef;
+
+     
+  
+}
+
+
+
+
+/* Booking page styling */
+
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.seat-body {
+  background-color: black;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+.booking-container {
+  margin: 20px 0;
+}
+
+.booking-container select {
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 5px 15px 5px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+}
+
+.container {
+  perspective: 1000px;
+  margin-bottom: 30px;
+}
+
+.seat {
+  background-color: rgb(126, 2, 2);
+  height: 26px;
+  width: 32px;
+  margin: 3px;
+  font-size: 50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /*border-bottom-right-radius: 10px ;
+   border-bottom-left-radius: 10px ;
+   */
+}
+
+.seat.selected {
+  background-color: white;
+}
+
+.seat.sold {
+  background-color: grey;
+}
+
+.seat:nth-of-type(2) {
+  margin-right: 18px;
+}
+
+.seat:nth-last-of-type(2) {
+  margin-left: 18px;
+}
+
+.seat:not(.sold):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.showcase .seat:not(.sold):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+.showcase li small {
+  margin-left: 2px;
+}
+
+.row {
+  display: flex;
+  padding-left: 25vw;
+}
+
+.screen {
+  background-color: #fff;
+  height: 120px;
+  width: 100%;
+  margin: 15px 0;
+  transform: rotateX(-48deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+p.text{
+    margin: 5px 0;
+}
+
+p.text span{
+    color: rgb(158, 248, 158);
+}
+.btnack {
+  border: none;
+  outline: none;
+  width: 130px;
+  padding: 0.6rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.5s linear;
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: red;
+  font-family: 'Patua One', cursive;
+  color: white;
+}
+
+.btnack:hover {
+  color: #ffffff;
+  background: var(--main-color);
+}
+
+/* Shows time*/
+.showstyle {
+  background-color: #717171;
+  height: 50%; 
+  text-decoration: none;
+  color: black;
+   
+}
+
+.showstyle :hover{
+  background-color: darkslategray;
+  text-decoration: none;
+}
+
+/* seating style */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.seat, .seat-booked {
+  float: left;
+  display: block;
+  margin: 5px;
+  background: #4CAF50;
+  width: 3vw;
+  height: 7vh;
+  margin-top: 2vh;
+  font-size: 150%;
+  text-align:center ;
+
+  color: rgb(230, 222, 222);
+  font-family: 'Staatliches', cursive;
+}
+
+.tabs{
+  tab-size: 2px;
+}
+
+.seat-select {
+  display: none;
+}
+
+.seat-select:checked+.seat {
+  background: #71cf4b;
+  
+  background-color: #F44336;
+
+}
+
+.seatingstyle {
+  background-color: black;
+  height: 100vh;
+  color: white;
+  font-size: x-small;
+  
+}
+
+.seat-container-left{
+
+  position: absolute;
+  width: 40%;
+  height: 20vh;
+  top: 22vh;
+  left: 8vw;
+  
+  
+
+}
+.seat-container-right{
+
+  position: absolute;
+  width: 40%;
+  top: 22vh;
+  left: 54vw ;
+}
+
+.seat-button{
+  display: block;
+  position: absolute;
+  top: 80vh;
+  left: 43vw;
+
+  
+}
+
+
+.seat-booked{
+  
+  background: rgb(68, 64, 64);
+  border-radius: 10px 10px 0 0  ;
+}
+
+
+  
+.seat-movie-btn{
+	height: 7vh;
+	width: 12vw;
+   font-size: 20px;
+   color: blanchedalmond;
+   background-color: rgb(252, 21, 21);
+   
+    border: 0;
+   
+  
+	
+	line-height: 1;
+	padding: 16px 30px;
+	cursor: pointer;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+   font-weight: bold;
+
+}
+/* Confirmation page styling */
+.confirmbox{
+      height: 35vh;
+      width: 30vw;
+}
+
+.confirm-container{
+  width: 20vw;
+}
+
+#conf{
+  font-family: 'Staatliches';
+
+  padding-right: 8vw;
+  color: #e5e5e5;
+  color: rgb(252, 21, 21);
+}
+
+.confirmbutton{
+    margin-top: px;
+    width: 72%;
+    background-color: rgb(252, 21, 21);
+    color: blanchedalmond;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 40px;
+
+}
+
+.confhead{
+  font-family: 'Staatliches';
+  font-size: 120%;
+  margin-top: 0vh;
+}
+
+#flashstyle-success, #flashstyle-error{
+  color: #050505;
+  background-color: rgb(130, 199, 84);
+  position: sticky;
+  position: fixed;
+  margin-top: 0 ;
+  width: 100%;
+  height: 8vh;
+  border: 0;
+  
+}
+
+#flashstyle-error{
+  background-color: #e7766d;
+}
+
+.close-btn{
+  font-size: xx-large;
+  font-weight: bold;
+  color: black;
+}
+
+/* ticket page */
+
+.t-img{
+  width: 6.5vw;
+  height: 21vh;
+  margin-left: 1.5vw;
+  margin-top: 4vh;
+  
+  display: block;
+  float: left;
+
+  border-radius: 5%;
+
+}
+
+.t-title{
+  font-size: x-large;
+  font-family: 'Staatliches';
+  color: rgba(252, 21, 21, 0.568);
+  
+  margin-left: 1.5vw;
+  margin-top: 1vh;
+  margin-bottom: 0.5vh;
+
+
+ 
+  
+}
+.t-box{
+  display: block;
+  float: left;
+  margin-top: 0.2vh;
+  background-color: rgb(8, 8, 8);
+  height: 41vh;
+  margin-left: 1.4vw;
+  width: 27vw;
+  border-radius: 1.5%;
+  padding-top: 1vh;
+}
+.right-details{
+
+  /*background-color: yellow   ;*/
+  height: 16vh;
+  width: 18vw;
+  
+  
+  display: block;
+  float: left;
+  margin-left: 1vw;
+  margin-top: 4vh;
+
+
+
+}
+
+
+
+.l2-circle, .l4-circle, .l1-circle, .l3-circle{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 3.5vw;
+  height: 3.5vw;
+  top: 20em;
+  background: black;
+  border-radius: 50%;
+  left: 0.5em;
+
+}
+
+.l3-circle{
+  background-color: black;
+  top: 2.3em;
+  left: 25em;
+}
+
+.l1-circle{
+  background-color: black;
+  top: 2.2em;
+  left: 0.3em;
+  height: 3.2vw;
+  width: 3.5vw;
+
+}
+
+.l4-circle{
+  left: 0;
+  background-color: black;
+  left: 25em;
+  
+}
+
+.t-label{
+  color: rgb(202, 200, 200);
+  font-family: 'Staatliches';
+  font-size: small;
+}
+
+.td-label, .td-info, .td-screen, .td-screen-no{
+  display: block;
+  position: absolute;
+  top: 20em;
+  font-family: 'Staatliches';
+  color: rgb(202, 200, 200);
+  font-size: small;
+  left: 12em;
+}
+
+.td-info, .td-screen-no{
+  font-size: xx-large;
+  top: 9em;
+  left: 4.8em;
+
+}
+
+.td-screen{
+  left: 4em;
+  
+}
+
+.td-screen-no{
+  left: 2em;
+}
+
+.t-info{
+  font-family: 'Staatliches';
+  color: white;
+  
+}
+
+.t-confirmbox{
+  height: 20vh;
+  width: 30vw;
+}
+
+
+.t-loginform{
+
+  height: 520px;
+  width: 450x;
+  background-color: rgba(0,0,0,1.0);
+ /* background-color: black;*/
+ margin-top: 6vh;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  /*border: 2px solid rgba(241, 237, 237, 0.603);*/
+ box-shadow: 0 0 40px rgba(18, 18, 20, 0.6);
+
+  display: inline-block;
+  
+
+}
+.t-loginform *{
+  letter-spacing: 0.5px;
+  outline: none;
+
+  
+  
+}
+
+
+.t-loginform h3{
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 42px;
+  text-align: center;
+  color: rgb(241, 19, 19);
+  opacity: 100%;
+
+}
+
+.qr{
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  
+}
+
+.qr-img{
+  display: block;
+  position: absolute;
+  top: 24em;
+  left: 11em;
+}

@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block title %}Seats{% endblock %}
+
+{%block content%}
+<div class="seatingstyle">
+
+<form   action="{{ url_for('auth.confirmation')}}" id="reservation" method="post">
+
+
+<div class="seat-container-left">
+{% for a in range(1,(seatcount+1)) %}
+
+
+  
+{%  if sh[a-1][2]=="Booked"  %}
+
+<div class="seat-booked"></div>
+
+{%   else  %}
+<div >
+<input id="seat-{{a}}" class="seat-select" type="checkbox" value={{a}} name="seatList" />
+<label for="seat-{{a}}" class="seat"> {{a}} </label>  
+
+</div>
+
+{% endif %}
+
+
+
+
+{% endfor %}
+
+</div>
+
+
+<div class="seat-container-right">
+    {% for a in range((seatcount)+1,(seatcount*2)+1) %}
+    
+    
+      
+    {%  if sh[a-1][2]=="Booked"  %}
+    
+    <div class="seat-booked"></div>
+    
+    {%   else  %}
+    <div >
+    <input id="seat-{{a}}" class="seat-select" type="checkbox" value={{a}} name="seatList" />
+    <label for="seat-{{a}}" class="seat"> {{a}} </label>  
+    
+    </div>
+    
+    {% endif %}
+    
+    
+    
+    
+    {% endfor %}
+    
+    </div>
+
+<span class="seat-button">
+
+
+<button class="seat-movie-btn" name="movsel" type="submit" value="{{showsel}}">BOOK NOW</button>
+
+</span>
+</form>
+
+
+
+</div>
+
+{% endblock %}

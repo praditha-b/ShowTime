@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Booking{% endblock %}
+
+{%block content%}
+
+<div class="bookingpage">
+
+
+<form class="shows-container"action="{{ url_for('auth.seats')}}" method="post"> 
+
+  {% for a in mov %}
+  
+          <button class="show" name="showsel" type="submit" value={{a[0]}}>
+
+          
+           
+          
+          Theatre : {{ a[1] }} <br> 
+          Date : {{ a[2] }} <br>
+          Time : {{ a[3] }} &nbsp; &nbsp; Price : &#x20B9;{{ a[5] }}
+
+          
+
+          
+
+          </button> 
+  {% endfor %}
+  
+  </form>
+
+</div>
+
+
+{% endblock %}

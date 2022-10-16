@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{%block content%}
+
+
+
+
+        <!--Carousel-->
+    
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides">
+            <img class="carousel" src="../static/images/spiderman2.jpg">
+            </div>
+          
+            <div class="mySlides">
+            <img class="carousel" src="../static/images/spiderman3.jpeg">
+            </div>
+          
+            <div class="mySlides">
+            <img class="carousel" src="../static/images/black_widow_carousel.jpeg">
+            </div>
+    
+            <div class="mySlides">
+            <img class="carousel" src="../static/images/black panther.jpg">
+            </div>
+    
+            <div class="mySlides">
+            <img class="carousel" src="../static/images/infinity war final.jpg">
+            </div>
+
+
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+         </div>
+        
+        </div>
+
+        <!--Upcoming Movies list-->
+    
+        <span class="movie-heading">Upcoming Releases</span>
+
+        <form action="{{ url_for('auth.upcomingmovie')}}" method="post"> 
+
+            {% for a in range(1,mid+1) %}
+            
+                        
+                     <button class="movbutton"name="hello" type="submit" value={{a}}><img class="movie-images-db" src="{{mv[a-1][6]}}">
+                    </button>
+    
+            {% endfor %}
+            
+            </form>
+        
+
+        <span class="movie-heading">Showing Now</span>
+        
+        <div>
+
+        <form action="{{ url_for('auth.description')}}" method="post"> 
+
+        {% for a in range(1,movid+1) %}
+        
+                    
+                 <button class="movbutton"name="hello" type="submit" value={{a}}><img class="movie-images-db" src="{{  mov[a-1][6]  }} " >
+                </button>
+
+                
+
+        {% endfor %}
+        
+        </form>
+
+        </div>
+
+
+        
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Sign Up{% endblock %}
+{%block content%}
+
+<body class="backgroundimage">
+    <form method="POST"  class="loginform" id="signupform">
+        <h3>SIGNUP HERE</h3>
+
+        
+            <label class="labelstyle" for="email">Email Address</label>
+            <input class="inputstyle" type="email" class="form-control" id="email" name="email" placeholder="Enter Email">
+        
+    
+        
+            <label  class="labelstyle" for="firstName">First Name</label>
+            <input class="inputstyle" type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter First Name">
+        
+    
+        
+            <label class="labelstyle" for="password1">Password</label>
+            <input class="inputstyle" type="password" class="form-control" id="password1" name="password1" placeholder="Enter Password">
+        
+    
+        
+            <label class="labelstyle" for="password2">Confirm Password</label>
+            <input class="inputstyle" type="password" class="form-control" id="password2" name="password2" placeholder="Confirm Password">
+        
+        
+        <button type="submit" class="loginbutton">SIGN UP</button>
+    </form>
+</body>
+
+{% endblock %}

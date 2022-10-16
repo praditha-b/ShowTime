@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}{{mov[a-1][1]}}{% endblock %}
+{%block content%}
+
+
+<form action="{{ url_for('auth.booking')}}"  method="post">
+
+<div class="movie-container">
+    <div class="poster">
+        <img src="{{ mov[a-1][6] }}" alt="">
+    </div>
+    <div class="info" style="overflow-y:scroll; height:92vh">
+        <div class="movie-title">
+            {{mov[a-1][1]}}
+        </div>
+        <div class="movie-details">
+            <div class="set">
+                <label >Release Date</label>
+                <span class="setstyle">
+                    {{mov[a-1][2]}}
+                </span>
+            </div>
+            <div class="set">
+                <label>Running Time</label>
+                <span class="setstyle">
+                    {{mov[a-1][3]}}
+                </span>
+            </div>
+            <div class="set">
+                <label>Genre</label>
+                <span class="setstyle">
+                    
+                    {{mov[a-1][4]}}
+
+                </span>
+            </div>
+        </div>
+        <div class="movie-description">
+
+            {{mov[a-1][5]}}
+            
+        </div>
+
+
+
+        <div class="item">
+
+            
+            <button class="movie-btn" name="movSel" type="submit" value={{a}}>BOOK NOW  </button>
+
+            
+
+        </div>
+        
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+</form>
+
+{% endblock %}

@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}Acknowledgement{% endblock %}
+
+{%block content%}
+
+
+    
+        
+<body class="backgroundimage">
+
+
+    
+    <div class="t-loginform "  >
+
+        <div class="t-confirmbox">
+        
+            <div class="t-title">SHOWTIME</div>
+            
+            <div class="l1-circle"></div>
+            <div class="l2-circle"></div>
+            <div class="l3-circle"></div>
+            <div class="l4-circle"></div>
+            <div class="t-box">
+                
+                
+            <img src="{{mov[0][6]}}" class="t-img">
+            
+            <div class="right-details" > 
+            
+                
+                <h4 class="t-info">{{ mov[0][1] }}</h4>
+                <h5 class="t-label">{{ shows[0][1] }}</h5>
+                <h5 class="t-label">{{ shows[0][2] }} &nbsp; | &nbsp;  {{ shows[0][3]}}</h5>
+                <h5 class="t-label">Booking id : {{ bid }}{{b}}</h5>
+                <h5 class="t-label">Price : &#x20B9; </h5>
+                <h5 class="t-label">Seats : {{ lilen }} </h5>
+            
+            
+            </div>
+            <div class="qr-img"> 
+            <img class="qr" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1200px-QR_code_for_mobile_English_Wikipedia.svg.png">
+            </div>
+
+            <h5 class="td-label">Seat no</h5>
+
+            <h1 class="td-info">{{ s  }}</h1>
+
+            <h5 class="td-screen">Screen</h5>
+
+            <h1 class="td-screen-no">{{ shows[0][6] }}</h1>
+
+            </div>
+            
+
+        
+        </div>
+        </div>
+    
+   
+    
+
+{% endblock %}

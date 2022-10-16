@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Confirmation{% endblock %}
+
+{%block content%}
+
+
+<body class="backgroundimage">
+
+    <form  class="loginform " action="{{ url_for('auth.acknowledgement')}}" method="POST" >
+
+    <div class="confirmbox">
+    <h3 id="conf">CONFIRM BOOKING DETAILS</h3> <br>
+
+        
+    <p class="confhead">Movie:  {{ movid[0][1] }}</p>
+    <p class="confhead">Theatre:  {{ shows[0][1] }}</p>
+    <p class="confhead">Date :  {{ shows[0][2] }} </p> 
+    <p class="confhead">Time : {{ shows[0][3]}} </p> 
+    <p class="confhead">Seats : {{ lilen }} &nbsp; &nbsp; Seat no : &nbsp; {{strlist[:-2]}}  </p>
+    <p class="confhead">Price : &#x20B9; {{(shows[0][5]*lilen)+(0.18*shows[0][5])}}  </p>     
+
+    <button class="confirmbutton" name= "confirm" type="submit" value={{strlist}}>CONFIRM BOOKING</button>
+    
+    
+    </div>
+    </form>
+
+</body>
+
+
+
+
+  
+
+
+
+
+
+{% endblock %}
