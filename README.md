@@ -18,4 +18,35 @@ The system follows a 3-tier architecture, with a web based front end, Python + F
  ####  [PROJECT REPORT](https://drive.google.com/file/d/1UJhLTAFmzoYCfg5GVcOOJIe0z-G0rvEO/view?usp=sharing)
 
 
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/praditha-b/ShowTime
+```
+
+Go to the project directory
+
+```bash
+  cd Project
+```
+
+Install dependencies
+
+```bash
+ pip install flask
+ pip instal flask-login
+ pip install flask-sqlalchemy
+
+```
+
+Start the server
+
+```bash
+  python main.py
+```
+
+
+
 
